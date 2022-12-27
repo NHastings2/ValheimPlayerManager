@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ValheimPlayerManager": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
