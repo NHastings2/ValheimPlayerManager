@@ -10,7 +10,7 @@ version: '3.3'
 services:
   valheimplayermanager:
     ports:
-      - '80:9996'
+      - '9996:80'
     environment:
       - DISCORD_WEBHOOK=<HOOK_HERE>
       - STEAM_APIKEY=<APIKEY_HERE>
