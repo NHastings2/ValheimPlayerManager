@@ -4,4 +4,19 @@ This application utilizes web endpoints to recieve player join and disconnect in
 
 All keys and configuation is stored in the Linux enviornment variables when deploying via docker.
 
-## Setup
+## Docker Compose File
+```yaml
+version: '3.3'
+services:
+  valheimplayermanager:
+    ports:
+      - '80:9996'
+    environment:
+      - DISCORD_WEBHOOK=<HOOK_HERE>
+      - STEAM_APIKEY=<APIKEY_HERE>
+    restart: always
+    logging:
+      options:
+        max-size: 1g
+    image: 'hastingsn25/valheimplayermanager:latest'
+```
